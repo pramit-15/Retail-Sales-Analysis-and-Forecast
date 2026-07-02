@@ -135,7 +135,7 @@ ________________________________________
 Pramit Shrivastav
 B.Tech (Information Technology)
 Machine Learning | Data Science | Artificial Intelligence
-GitHub: https://github.com/pramit-15________________________________________
+GitHub: https://github.com/pramit-15
 ⭐ Acknowledgements
 Special thanks to:
 •	Scikit-learn
