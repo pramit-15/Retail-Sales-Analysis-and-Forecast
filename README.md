@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/ce8bb55e-6992-468c-a98d-70270d104a76
+
+
+
 🛒 Smart Retail Analytics & Demand Forecasting using Machine Learning
 An End-to-End Retail Analytics Platform that performs sales analysis, customer insights, inventory intelligence, and demand forecasting using Machine Learning.
 ________________________________________
