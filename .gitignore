@@ -1,0 +1,14 @@
+# Models
+model/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# Dataset (optional)
+dataset/
+
+# Python
+__pycache__/
+.venv/
