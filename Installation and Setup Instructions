@@ -1,0 +1,235 @@
+# Installation & Setup Instructions
+
+## Prerequisites
+
+Before running the project, ensure the following software is installed on your system:
+
+* Python 3.12 or later
+* Git
+* pip (Python package manager)
+* A modern web browser (Google Chrome, Microsoft Edge, or Mozilla Firefox)
+
+Verify the installation by running:
+
+```bash
+python --version
+pip --version
+git --version
+```
+
+---
+
+## Step 1: Clone the Repository
+
+Clone the project from GitHub:
+
+```bash
+git clone https://github.com/<your-username>/Retail-Sales-Analysis-and-Forecast-using-Machine-Learning.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Retail-Sales-Analysis-and-Forecast-using-Machine-Learning
+```
+
+---
+
+## Step 2: Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux/macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+When activated, your terminal prompt should display the virtual environment name.
+
+---
+
+## Step 3: Install Required Dependencies
+
+Install all required Python packages using the provided requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+If you need to generate the requirements file after installing packages, run:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+## Step 4: Configure the Application
+
+If the project includes a configuration file (for example, `config.py`), verify or update any required settings such as:
+
+* Secret Key
+* Database Location
+* Upload Folder
+* Machine Learning Model Paths
+
+The default configuration is sufficient for local development in most cases.
+
+---
+
+## Step 5: Prepare the Dataset
+
+Place the retail sales dataset in the appropriate project directory (for example, `dataset/` or `static/uploads/`).
+
+Ensure the dataset is in CSV format and contains the required columns, such as:
+
+* Order Date
+* Product
+* Category
+* Quantity
+* Sales
+* Customer ID
+* Region
+
+---
+
+## Step 6: Run the Application
+
+Start the Flask application:
+
+```bash
+python app.py
+```
+
+If Flask is configured through environment variables, you may alternatively use:
+
+```bash
+flask run
+```
+
+---
+
+## Step 7: Access the Application
+
+Open your web browser and navigate to:
+
+```
+http://127.0.0.1:5000
+```
+
+The home page of the Smart Retail Analytics & Demand Forecasting application should now be available.
+
+---
+
+## Verifying the Installation
+
+A successful installation is confirmed if:
+
+* The Flask server starts without errors.
+* The application loads successfully in the browser.
+* The dashboard is accessible.
+* A retail dataset can be uploaded.
+* Visualizations and analytics are generated correctly.
+* Demand forecasting produces prediction results.
+
+---
+
+## Common Troubleshooting
+
+### Virtual Environment Not Activated
+
+If Python packages cannot be found, activate the virtual environment before running the application.
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### Missing Python Packages
+
+If you encounter a `ModuleNotFoundError`, install the missing dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Port Already in Use
+
+If port `5000` is occupied, run the application on another port:
+
+```bash
+flask run --port=5001
+```
+
+---
+
+### Dataset Not Loading
+
+Ensure that:
+
+* The CSV file exists in the correct directory.
+* The dataset uses UTF-8 encoding.
+* Required columns are present.
+* File permissions allow read access.
+
+---
+
+## Stopping the Application
+
+To stop the Flask server, press:
+
+```text
+Ctrl + C
+```
+
+---
+
+## Updating the Project
+
+To download the latest changes from GitHub:
+
+```bash
+git pull origin main
+```
+
+If new dependencies have been added, reinstall them:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## System Requirements
+
+| Component        | Minimum Requirement                      |
+| ---------------- | ---------------------------------------- |
+| Operating System | Windows 10/11, Linux, or macOS           |
+| Python           | 3.12+                                    |
+| RAM              | 4 GB (8 GB Recommended)                  |
+| Storage          | 500 MB Free Space                        |
+| Internet         | Required only for cloning the repository |
+| Browser          | Chrome, Edge, or Firefox                 |
